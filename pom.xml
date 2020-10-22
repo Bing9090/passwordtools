@@ -15,6 +15,20 @@
             <artifactId>jasypt-spring-boot-starter</artifactId>
             <version>3.0.3</version>
         </dependency>
+
+        <!-- hutools -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.4.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15to18</artifactId>
+            <version>1.66</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -41,6 +55,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -14,5 +14,7 @@
     <orderEntry type="library" name="Maven: com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: com.github.ulisesbocchio:jasypt-spring-boot:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.jasypt:jasypt:1.9.3" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.4.4" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15to18:1.66" level="project" />
   </component>
 </module>
