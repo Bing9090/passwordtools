@@ -3,7 +3,6 @@ package com.dbc.passwdtools;
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.crypto.Mode;
 import cn.hutool.crypto.Padding;
-import cn.hutool.crypto.SmUtil;
 import cn.hutool.crypto.digest.SM3;
 import cn.hutool.crypto.symmetric.SM4;
 import org.jasypt.encryption.StringEncryptor;
@@ -22,6 +21,8 @@ import org.jasypt.encryption.StringEncryptor;
  */
 public class SM4StringEncryptor implements StringEncryptor {
 
+    private String encryptorPassword;
+
     public String getEncryptorPassword() {
         return encryptorPassword;
     }
@@ -29,8 +30,6 @@ public class SM4StringEncryptor implements StringEncryptor {
     public void setEncryptorPassword(String encryptorPassword) {
         this.encryptorPassword = encryptorPassword;
     }
-
-    private String encryptorPassword;
 
     @Override
     public String encrypt(String s) {
