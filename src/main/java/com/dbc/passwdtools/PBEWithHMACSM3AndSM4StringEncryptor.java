@@ -4,7 +4,6 @@ import cn.hutool.core.codec.Base64;
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.crypto.Mode;
 import cn.hutool.crypto.Padding;
-import cn.hutool.crypto.SmUtil;
 import cn.hutool.crypto.digest.SM3;
 import cn.hutool.crypto.symmetric.SM4;
 import org.jasypt.encryption.StringEncryptor;
@@ -24,12 +23,18 @@ import org.jasypt.salt.SaltGenerator;
 
 public class PBEWithHMACSM3AndSM4StringEncryptor implements StringEncryptor {
 
-    // salt长度，默认8byte
+    /**
+     * salt长度，默认8byte
+     */
     private int saltSizeBytes = 8;
-    // salt生成对象
+    /**
+     * salt生成对象
+     */
     private SaltGenerator saltGenerator = null;
-    // salt
-    private byte[] salt;
+    /**
+     * salt
+     */
+    private byte[] salt = new byte[saltSizeBytes];
 
     private String encryptorPassword;
 

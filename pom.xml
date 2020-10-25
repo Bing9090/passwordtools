@@ -7,7 +7,8 @@
     <groupId>groupId</groupId>
     <artifactId>passwdtools</artifactId>
     <packaging>jar</packaging>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
+    <description>fixed the decrypt bugs</description>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot -->
@@ -34,7 +35,7 @@
     </dependencies>
 
     <build>
-        <finalName>${artifactId}</finalName>
+        <finalName>${artifactId}-${version}</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
