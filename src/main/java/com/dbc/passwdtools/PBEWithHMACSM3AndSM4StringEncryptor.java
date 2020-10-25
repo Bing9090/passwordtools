@@ -88,13 +88,14 @@ public class PBEWithHMACSM3AndSM4StringEncryptor implements StringEncryptor {
         return sm4.decryptStr(encryptBytes);
     }
 
+    /*
     public static void main(String[] args) {
         PBEWithHMACSM3AndSM4StringEncryptor pbeWithHMACSM3AndSM4StringEncryptor = new PBEWithHMACSM3AndSM4StringEncryptor();
         pbeWithHMACSM3AndSM4StringEncryptor.initialize("dabaicai");
         String encryptText = pbeWithHMACSM3AndSM4StringEncryptor.encrypt("1qaz2wsx@dbc");
         System.out.println("encryptText: " + encryptText);
-
         String decryptText = pbeWithHMACSM3AndSM4StringEncryptor.decrypt(encryptText);
         System.out.println("decryptText: " + decryptText);
     }
+    */
 }

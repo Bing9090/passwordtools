@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="passwdtools" target="6" />
+      <module name="passwdtools" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -13,7 +13,7 @@ import org.jasypt.encryption.StringEncryptor;
  * 故采用先sm3计算摘要(32byte)，然后截取前16byte作为SM4算法的密钥。
  * 3. SM4采用CBC模式，padding使用PKCS5Padding，IV（初始偏移量）使用sm3算法的后16byte。
  * 4. 最终输出结果采用base64编码。
- *
+ * <p>
  * 本方法的缺点在于，由于并没有使用HMAC算法（混入salt值），所以同样的加密密码和明文每次加密产出的内容都是相同的。
  *
  * @author dabaicai
@@ -55,6 +55,7 @@ public class SM4StringEncryptor implements StringEncryptor {
         return sm4.decryptStr(s, CharsetUtil.CHARSET_UTF_8);
     }
 
+    /*
     public static void main(String[] args) {
         // 加密
         SM4StringEncryptor sm4StringEncryptor = new SM4StringEncryptor();
@@ -66,4 +67,5 @@ public class SM4StringEncryptor implements StringEncryptor {
         String decryptText = sm4StringEncryptor.decrypt(encryptText);
         System.out.println("decryptText text: " + decryptText);
     }
+    */
 }
