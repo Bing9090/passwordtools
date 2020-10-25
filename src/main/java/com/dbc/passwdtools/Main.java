@@ -4,9 +4,10 @@ import org.jasypt.util.text.AES256TextEncryptor;
 import org.jasypt.util.text.BasicTextEncryptor;
 
 /**
+ * @param {Algorithm}: 1-PBEWithHMACSM3AndSM4 | 2-SM4 | 3-PBEWithHMACSHA512AndAES_256 | 4-PBEWithMD5AndDES
  * @author dabaicai
  * 2020-09-29
- * useage: java -jar passwdtools.jar "{salt}" "{passwd}"
+ * useage: java -jar passwdtools.jar {Algorithm} "{salt}" "{passwd}"
  */
 
 public class Main {
