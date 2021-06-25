@@ -13,13 +13,6 @@ import org.jasypt.util.text.BasicTextEncryptor;
 public class Main {
 
     public static void main(String[] args) {
-        /*
-        args = new String[3];
-        args[0] = "1";
-        args[1] = "daabicai";
-        args[2] = "1qaz2wsx@dbc";
-        System.out.println("args[1]: " + args[1] + ", args[2]: " + args[2]);
-        */
         if (args.length != 3) {
             System.out.println("Args error! The useage: java -jar passwdtools.jar {Algorithm} \"{salt}\" \"{passwd}\"");
             return;
